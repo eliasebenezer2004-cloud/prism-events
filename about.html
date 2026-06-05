@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Prism Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "brand-red": "#E11D48",
+                      "brand-yellow": "#FFD600",
+                      "brand-green": "#10B981",
+                      "brand-blue": "#0053a6",
+                      "brand-navy": "#000B33",
+                      "on-secondary-container": "#6c5000",
+                      "on-secondary-fixed-variant": "#5b4300",
+                      "secondary": "#785900",
+                      "surface-container-highest": "#e0e2eb",
+                      "primary-fixed-dim": "#aac7ff",
+                      "vibrant-orange": "#F97316",
+                      "outline": "#727784",
+                      "on-primary-container": "#ebefff",
+                      "on-primary-fixed": "#001b3e",
+                      "navy-depth": "#000B33",
+                      "inverse-primary": "#aac7ff",
+                      "on-secondary-fixed": "#261a00",
+                      "error-container": "#ffdad6",
+                      "inverse-surface": "#2d3037",
+                      "on-primary-fixed-variant": "#00458d",
+                      "surface-container": "#ecedf7",
+                      "on-error-container": "#93000a",
+                      "vibrant-green": "#10B981",
+                      "on-tertiary-fixed": "#341100",
+                      "inverse-on-surface": "#eff0f9",
+                      "surface-dim": "#d8dae3",
+                      "primary": "#0053a6",
+                      "tertiary-fixed-dim": "#ffb692",
+                      "secondary-container": "#fdc003",
+                      "vibrant-red": "#E11D48",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#ffece5",
+                      "surface": "#f9f9ff",
+                      "vibrant-teal": "#0D9488",
+                      "on-surface": "#191c22",
+                      "background": "#f9f9ff",
+                      "surface-variant": "#e0e2eb",
+                      "surface-tint": "#005db8",
+                      "on-tertiary-fixed-variant": "#793000",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "surface-container-high": "#e6e8f1",
+                      "outline-variant": "#c1c6d5",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#d6e3ff",
+                      "surface-container-low": "#f2f3fc",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#fabd00",
+                      "on-background": "#191c22",
+                      "on-surface-variant": "#414753",
+                      "tertiary-container": "#b64d03",
+                      "secondary-fixed": "#ffdf9e",
+                      "tertiary-fixed": "#ffdbcb",
+                      "tertiary": "#903b00",
+                      "primary-container": "#046bd2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "1.5rem",
+                      "xl": "2.5rem",
+                      "2xl": "4rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "1.5rem",
+                      "gutter": "2rem",
+                      "section-gap-md": "6rem",
+                      "container-max": "1280px",
+                      "section-gap-lg": "10rem",
+                      "margin-desktop": "3rem"
+              },
+              "fontFamily": {
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "label-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Montserrat"],
+                      "headline-lg": ["Montserrat"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        .organic-shape { border-radius: 60% 40% 70% 30% / 40% 50% 60% 70%; }
+        .bubble-card { border-radius: 3rem 1rem 3rem 1rem; }
+        .pill-button { border-radius: 9999px; }
+        .blob-bg { position: absolute; z-index: -1; filter: blur(60px); opacity: 0.15; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-brand-yellow selection:text-brand-navy">
+<!-- TopNavBar -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-container-max z-50">
+<div class="bg-white/80 dark:bg-brand-navy/80 backdrop-blur-2xl border-4 border-brand-yellow/30 shadow-2xl shadow-brand-blue/10 px-6 h-20 rounded-full flex justify-between items-center">
+<div class="flex items-center gap-4">
+<img alt="Prism Events" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLsm2cDJbYWnFSsZSDC16uJ5HAtAJcd--uDukuI91X0VcaTwR2wr4Ab0aCLSmEBOgeChjGmjRmh3S2ETmHhsGAspywZpbZtzcubQdQdXs90R5ktGfb4fiMcFynC0uLLNR4SvK1xHFco3t43n4jRNGMwDLPlrCgbJxgUPBZnMNtkW6II-RpAVHnMUQ_nVjR0W9f5bLSPjGn-UcbeqILDh5R4jLptlL8JMleoFX8ywWG62CKG2QMHV2QM3e-oW"/>
+<span class="hidden lg:block font-display-lg text-headline-md text-brand-blue dark:text-brand-yellow tracking-tighter">Prism Events</span>
+</div>
+<nav class="hidden md:flex items-center gap-2">
+<a class="text-on-surface-variant hover:bg-brand-blue/10 px-5 py-2 rounded-full transition-all font-label-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:bg-brand-red/10 px-5 py-2 rounded-full transition-all font-label-md" href="#">Weddings</a>
+<a class="text-on-surface-variant hover:bg-brand-green/10 px-5 py-2 rounded-full transition-all font-label-md" href="#">Corporate</a>
+<a class="bg-brand-blue text-white px-5 py-2 rounded-full font-label-md shadow-lg shadow-brand-blue/30" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-brand-red text-white font-label-md px-8 py-3 pill-button hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-red/20">Book Now</button>
+<button class="md:hidden bg-brand-yellow p-3 rounded-full text-brand-navy">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop overflow-hidden py-24">
+<!-- Background Blobs -->
+<div class="blob-bg w-[800px] h-[800px] bg-brand-blue top-[-20%] left-[-10%] animate-pulse"></div>
+<div class="blob-bg w-[600px] h-[600px] bg-brand-red bottom-[-10%] right-[-5%]"></div>
+<div class="absolute inset-0 z-0 overflow-hidden rounded-[4rem] mx-4 my-4 border-[12px] border-white shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLt3lQ2OMHNMEQwGjCtbFPPCERj7d9pvglHumBDutz3Ou95Dg07FQcFL1a7aqNMfy9j-Pdbdo4YF5WLXkZXLF6hkEFXVULI7uNSaNPnlPQ2svMitrOdTgWYqdHvP2bXEBBhP2T0585IWCrfInbgd4zcPA7jT2JlQvkE-f3ASeBgrVacAoIdSHhL_NslKoH7zZaFJQ5yPDtvvm9O5SKnNSGHA8ry2y4LoabJYeoKld43V5MfdFlg7NeWMfq97');">
+<div class="absolute inset-0 bg-gradient-to-tr from-brand-navy/95 via-brand-navy/40 to-transparent"></div>
+</div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter w-full">
+<div class="bg-white/10 backdrop-blur-3xl border-4 border-white/20 p-10 md:p-16 rounded-[4rem] shadow-2xl shadow-brand-navy/50 organic-shape">
+<div class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-brand-yellow text-brand-navy mb-8 font-label-sm uppercase tracking-widest shadow-lg shadow-brand-yellow/20">
+<span class="material-symbols-outlined text-sm icon-fill">flare</span>
+<span>Our Philosophy</span>
+</div>
+<h1 class="font-display-lg text-white mb-8 leading-tight">
+                    Adding Flavor, <br/><span class="text-brand-yellow">Illuminating Moments</span>
+</h1>
+<p class="font-body-lg text-white/90 mb-8 leading-relaxed">
+                    Our name, "Prism," is rooted in the science of light. Just as a prism refracts white light into a stunning spectrum of colors, we take your vision and transform it into a vibrant, multi-dimensional celebration that dazzles every sense.
+                </p>
+<div class="bg-brand-blue/30 p-6 rounded-[2.5rem] border-2 border-brand-blue/50">
+<p class="font-body-md text-white/80 italic">
+                        Every event needs three essential elements: color, for visual impact and theme; energy, for dynamic experiences; and brilliance, for that unforgettable sparkle that leaves guests talking for years.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Milestones Section -->
+<section class="py-section-gap-md px-margin-mobile md:px-margin-desktop bg-transparent relative z-20 -mt-24">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+<div class="bg-brand-blue text-white bubble-card p-12 text-center shadow-2xl shadow-brand-blue/30 transform hover:-rotate-2 transition-transform">
+<span class="font-display-lg block text-brand-yellow text-7xl mb-4">500+</span>
+<span class="font-headline-md block mb-2">Memorable Events</span>
+<p class="text-white/70 font-body-md">Seamlessly executed celebrations</p>
+</div>
+<div class="bg-brand-red text-white bubble-card p-12 text-center shadow-2xl shadow-brand-red/30 transform md:translate-y-12 hover:rotate-2 transition-transform">
+<span class="font-display-lg block text-brand-yellow text-7xl mb-4">10k+</span>
+<span class="font-headline-md block mb-2">Delighted Guests</span>
+<p class="text-white/70 font-body-md">Experiencing true hospitality</p>
+</div>
+<div class="bg-brand-green text-white bubble-card p-12 text-center shadow-2xl shadow-brand-green/30 transform hover:-rotate-1 transition-transform">
+<span class="font-display-lg block text-brand-yellow text-7xl mb-4">100%</span>
+<span class="font-headline-md block mb-2">Client Satisfaction</span>
+<p class="text-white/70 font-body-md">Committed to your joy</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Visionaries -->
+<section class="py-section-gap-lg px-margin-mobile md:px-margin-desktop bg-white relative overflow-hidden">
+<!-- Blobs -->
+<div class="blob-bg w-[700px] h-[700px] bg-brand-yellow top-[10%] right-[-15%]"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-20">
+<h2 class="font-display-lg text-brand-navy mb-4">Meet the Visionaries</h2>
+<div class="w-24 h-3 bg-brand-red mx-auto rounded-full mb-6"></div>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">The passionate minds dedicated to crafting exceptional and memorable experiences for you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Joshua M.S -->
+<div class="group relative">
+<div class="bg-brand-blue/5 p-4 rounded-[4rem] organic-shape overflow-hidden shadow-xl border-4 border-white transition-all group-hover:border-brand-blue">
+<div class="aspect-[4/4] rounded-[3.5rem] overflow-hidden relative">
+<img alt="Joshua M.S" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApX7W2ccx4VxvrH1kFzxSRcaMDSUKrVCH30CsMPLoXeEYTDChUxeI9Z0Wo8Aj6o9V_sY2N_6hpRUM1cArWcb96tgeZeKEYYLtCGeI8eRNWuOAD763S0qRt9eHdklSgxhZMkhVq3apcH7lFwhBt-PjnRJTymQxhIZBfWXrXMP9VLDJKAslYLaJ_zpyG2GNCJcBZli5cDifySKlUpsDQ-Wn5Jj8OkRtfIRtxZwwtIDFHBvciFq7yd1jOGJn4e7tdppfk3HOJnKmt5gEm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-blue/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-display-lg text-4xl text-white mb-1">Joshua M.S</h3>
+<p class="bg-brand-yellow text-brand-navy px-4 py-1 rounded-full text-label-sm inline-block font-bold">Founder | Events &amp; Managing Director</p>
+</div>
+</div>
+<div class="p-8">
+<p class="font-body-md text-on-surface-variant text-lg leading-relaxed">With a deep passion for storytelling through events, Joshua leads the team with a vision to create personalized experiences that leave a lasting impression. His meticulous planning ensures seamless execution.</p>
+</div>
+</div>
+</div>
+<!-- Andrew Adam -->
+<div class="group relative md:mt-24">
+<div class="bg-brand-red/5 p-4 rounded-[4rem] organic-shape overflow-hidden shadow-xl border-4 border-white transition-all group-hover:border-brand-red">
+<div class="aspect-[4/4] rounded-[3.5rem] overflow-hidden relative">
+<img alt="Andrew Adam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR_A55azDnezVob02dF8-c8ZZdbRkQfxbAVwpHONgIdNocB2mq2T1I5AB5XJaolwBBV6qTQgDbBhg_Rs4YjuqNJUWOENl3Am6rgLeiQ9sZy36eNAZCORZk_w-ZRdIum4E2aSjao3tHOJtbgh_CTREaALs2SCQdFbMa3vXrVFEwzsq33J-y0b-E0ywgCdthRFz-wCla8uKZXItpnVRgOcimp9bM2d2irmMEE7qea4WA_zUTiqwfoXMcApU_E3C2PRUFkVXlu1RIiwhI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-red/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-display-lg text-4xl text-white mb-1">Andrew Adam</h3>
+<p class="bg-brand-yellow text-brand-navy px-4 py-1 rounded-full text-label-sm inline-block font-bold">Events Director | Head Of Operations</p>
+</div>
+</div>
+<div class="p-8">
+<p class="font-body-md text-on-surface-variant text-lg leading-relaxed">Andrew orchestrates the operational magic behind the scenes. His focus on precision, logistics, and team coordination ensures that every event, whether intimate or grand, is executed flawlessly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Values Section -->
+<section class="py-section-gap-lg px-margin-mobile md:px-margin-desktop relative overflow-hidden bg-brand-navy">
+<div class="blob-bg w-[900px] h-[900px] bg-brand-green top-[-20%] left-[-10%] opacity-20"></div>
+<div class="blob-bg w-[700px] h-[700px] bg-brand-blue bottom-[-10%] right-[-5%] opacity-20"></div>
+<div class="relative z-10 max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-display-lg text-white mb-4">Our Core Values</h2>
+<div class="w-32 h-3 bg-brand-green mx-auto rounded-full mb-8"></div>
+<p class="font-body-lg text-white/70 max-w-2xl mx-auto">Driven by Passion, Inspired by Moments, Tailored to You.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Value 1 -->
+<div class="bg-white/5 backdrop-blur-xl border-4 border-brand-blue/30 organic-shape p-12 hover:bg-brand-blue transition-all duration-500 group text-center">
+<div class="w-24 h-24 rounded-full bg-brand-blue flex items-center justify-center mx-auto mb-8 group-hover:bg-white shadow-2xl">
+<span class="material-symbols-outlined text-5xl text-white group-hover:text-brand-blue icon-fill">tune</span>
+</div>
+<h3 class="font-headline-lg text-white mb-6">Personalized Solutions</h3>
+<p class="font-body-md text-white/80 group-hover:text-white leading-relaxed">Every event is unique! We customize our services to match your vision, preferences, and requirements meticulously.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white/5 backdrop-blur-xl border-4 border-brand-red/30 organic-shape p-12 hover:bg-brand-red transition-all duration-500 group text-center md:scale-110">
+<div class="w-24 h-24 rounded-full bg-brand-red flex items-center justify-center mx-auto mb-8 group-hover:bg-white shadow-2xl">
+<span class="material-symbols-outlined text-5xl text-white group-hover:text-brand-red icon-fill">sentiment_satisfied</span>
+</div>
+<h3 class="font-headline-lg text-white mb-6">Happy Vibes</h3>
+<p class="font-body-md text-white/80 group-hover:text-white leading-relaxed">With our dedicated team and seamless coordination, we create joyful, memorable experiences for you and your guests.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white/5 backdrop-blur-xl border-4 border-brand-green/30 organic-shape p-12 hover:bg-brand-green transition-all duration-500 group text-center">
+<div class="w-24 h-24 rounded-full bg-brand-green flex items-center justify-center mx-auto mb-8 group-hover:bg-white shadow-2xl">
+<span class="material-symbols-outlined text-5xl text-white group-hover:text-brand-green icon-fill">verified</span>
+</div>
+<h3 class="font-headline-lg text-white mb-6">Passionate Craft</h3>
+<p class="font-body-md text-white/80 group-hover:text-white leading-relaxed">We handle every detail with expertise, ensuring a stress-free and flawlessly executed event from start to finish.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white w-full py-20 relative overflow-hidden">
+<div class="blob-bg w-[500px] h-[500px] bg-brand-yellow -bottom-1/2 -left-1/4 opacity-20"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="bg-brand-navy p-8 rounded-[3rem] organic-shape inline-block w-fit shadow-2xl">
+<img alt="Logo" class="h-16 w-auto mb-6" src="https://lh3.googleusercontent.com/aida/AP1WRLsm2cDJbYWnFSsZSDC16uJ5HAtAJcd--uDukuI91X0VcaTwR2wr4Ab0aCLSmEBOgeChjGmjRmh3S2ETmHhsGAspywZpbZtzcubQdQdXs90R5ktGfb4fiMcFynC0uLLNR4SvK1xHFco3t43n4jRNGMwDLPlrCgbJxgUPBZnMNtkW6II-RpAVHnMUQ_nVjR0W9f5bLSPjGn-UcbeqILDh5R4jLptlL8JMleoFX8ywWG62CKG2QMHV2QM3e-oW"/>
+<h4 class="font-display-lg text-3xl text-white mb-2">Prism Events</h4>
+<p class="text-white/60 font-body-md max-w-sm italic">"Refracting your vision into unforgettable celebrations."</p>
+</div>
+<p class="text-brand-navy font-bold">© 2026 Prism Events. All Rights Reserved.</p>
+</div>
+<div class="md:col-span-3 flex flex-col gap-4">
+<h5 class="text-brand-red font-display-lg text-2xl mb-4">Discover</h5>
+<a class="text-on-surface-variant hover:text-brand-blue font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-blue/5 transition-all w-fit" href="#">Portfolio</a>
+<a class="text-on-surface-variant hover:text-brand-blue font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-blue/5 transition-all w-fit" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-brand-blue font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-blue/5 transition-all w-fit" href="#">Philosophy</a>
+</div>
+<div class="md:col-span-4 flex flex-col gap-4">
+<h5 class="text-brand-green font-display-lg text-2xl mb-4">Connect</h5>
+<a class="text-on-surface-variant hover:text-brand-green font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-green/5 transition-all w-fit" href="#">The Team</a>
+<a class="text-on-surface-variant hover:text-brand-green font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-green/5 transition-all w-fit" href="contact.html">Contact Us</a>
+<a class="text-on-surface-variant hover:text-brand-green font-bold text-lg py-2 px-4 rounded-full hover:bg-brand-green/5 transition-all w-fit" href="#">Privacy Policy</a>
+<div class="mt-8 flex gap-4">
+<div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div class="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Curve -->
+<div class="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-r from-brand-red via-brand-yellow to-brand-green"></div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('section > div, section > h2, .grid > div').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
+<style>
+  .animate-fade-in { opacity: 1 !important; transform: translateY(0) !important; }
+</style>
+</body></html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Prism Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#6c5000",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "secondary": "#785900",
+                        "surface-container-highest": "#e0e2eb",
+                        "primary-fixed-dim": "#aac7ff",
+                        "vibrant-orange": "#F97316",
+                        "outline": "#727784",
+                        "on-primary-container": "#ebefff",
+                        "on-primary-fixed": "#001b3e",
+                        "navy-depth": "#000B33",
+                        "inverse-primary": "#aac7ff",
+                        "on-secondary-fixed": "#261a00",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2d3037",
+                        "on-primary-fixed-variant": "#00458d",
+                        "surface-container": "#ecedf7",
+                        "on-error-container": "#93000a",
+                        "vibrant-green": "#10B981",
+                        "on-tertiary-fixed": "#341100",
+                        "inverse-on-surface": "#eff0f9",
+                        "surface-dim": "#d8dae3",
+                        "primary": "#0053a6",
+                        "tertiary-fixed-dim": "#ffb692",
+                        "secondary-container": "#fdc003",
+                        "vibrant-red": "#E11D48",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffece5",
+                        "surface": "#f9f9ff",
+                        "vibrant-teal": "#0D9488",
+                        "on-surface": "#191c22",
+                        "background": "#f9f9ff",
+                        "surface-variant": "#e0e2eb",
+                        "surface-tint": "#005db8",
+                        "on-tertiary-fixed-variant": "#793000",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "surface-container-high": "#e6e8f1",
+                        "outline-variant": "#c1c6d5",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-low": "#f2f3fc",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#fabd00",
+                        "on-background": "#191c22",
+                        "on-surface-variant": "#414753",
+                        "tertiary-container": "#b64d03",
+                        "secondary-fixed": "#ffdf9e",
+                        "tertiary-fixed": "#ffdbcb",
+                        "tertiary": "#903b00",
+                        "primary-container": "#046bd2"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2.5rem",
+                        "4xl": "4rem",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "1rem",
+                        "gutter": "1.5rem",
+                        "section-gap-md": "4rem",
+                        "container-max": "1280px",
+                        "section-gap-lg": "8rem",
+                        "margin-desktop": "2.5rem"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "700" }],
+                        "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bubble-container {
+            border-radius: 4rem;
+        }
+        .organic-shape {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 70%;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(236, 237, 247, 0.8) 0%, rgba(253, 192, 3, 0.1) 100%);
+        }
+        .blob-bg {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.3;
+            z-index: -1;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm shadow-navy-depth/5">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="font-display-lg text-headline-md text-primary tracking-tight">Prism Events</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Weddings</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Corporate</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="about.html">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-primary/90 hover:-translate-y-0.5 transition-all shadow-sm shadow-primary/20 hidden md:block">Book Now</button>
+<button class="md:hidden text-primary p-2 hover:bg-primary/5 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-section-gap-md md:pt-40 md:pb-section-gap-lg px-margin-mobile md:px-margin-desktop overflow-hidden hero-gradient">
+<div class="blob-bg bg-vibrant-red w-96 h-96 top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+<div class="blob-bg bg-secondary-container w-[500px] h-[500px] bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
+<div class="blob-bg bg-vibrant-green w-80 h-80 top-1/2 left-1/4 -translate-y-1/2"></div>
+<div class="max-w-container-max mx-auto relative z-10 text-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-navy-depth mb-6">Let's Make Your Next<br/><span class="text-primary">Celebration Unforgettable</span></h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Whether it's a grand wedding or a corporate summit, we bring your vision to life with flavor, impact, and illumination.</p>
+<div class="flex justify-center gap-4">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/20 transition-all hover:scale-105" href="#contact-form">Get In Touch</a>
+</div>
+</div>
+</header>
+<!-- Main Content Grid -->
+<main class="py-section-gap-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Contact Details & Map (Left Column) -->
+<div class="lg:col-span-5 flex flex-col gap-10">
+<!-- Info Card -->
+<div class="glass-panel bubble-container p-10 shadow-xl shadow-navy-depth/5 border-2 border-primary/10">
+<h2 class="font-headline-lg text-navy-depth mb-8">Contact Us</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-5">
+<div class="bg-vibrant-red/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-vibrant-red">call</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface mb-1">Phone</h3>
+<a class="font-body-md text-on-surface-variant hover:text-vibrant-red transition-colors" href="tel:+919710351020">+91 9710351020</a>
+</div>
+</div>
+<div class="flex items-start gap-5">
+<div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface mb-1">Email</h3>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors break-all" href="mailto:hello@prismevents.com">hello@prismevents.com</a>
+</div>
+</div>
+<div class="flex items-start gap-5">
+<div class="bg-secondary-container/20 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+</div>
+<div>
+<h3 class="font-label-md text-on-surface mb-1">Location</h3>
+<p class="font-body-md text-on-surface-variant">Chennai, India</p>
+<p class="font-label-sm text-outline mt-1">GSTIN: 33DQVPS8045F2Z7</p>
+</div>
+</div>
+</div>
+<hr class="my-10 border-outline-variant/30"/>
+<!-- Social Links -->
+<div>
+<h3 class="font-label-md text-on-surface mb-6 text-center">Follow Our Journey</h3>
+<div class="flex gap-4 justify-center">
+<a class="w-14 h-14 rounded-full border-2 border-outline-variant flex items-center justify-center text-on-surface hover:bg-vibrant-red hover:border-vibrant-red hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+<a class="w-14 h-14 rounded-full border-2 border-outline-variant flex items-center justify-center text-on-surface hover:bg-vibrant-orange hover:border-vibrant-orange hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-14 h-14 rounded-full border-2 border-outline-variant flex items-center justify-center text-on-surface hover:bg-primary hover:border-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Map Embed Placeholder -->
+<div class="h-80 organic-shape overflow-hidden shadow-2xl bg-surface-container relative border-4 border-vibrant-green/20">
+<img alt="Map of Chennai" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtgyB3zyCVOQ8lMimT7zQ7z2LuK39NttBlhwr4ThQsWoyNNsgVAx0mqkbThNKuwbjJppb1Gt6WeT4u0abFz3O9uEOyR_3LhOwI2Bz5D0tkAq8788kwigRR07C_IUJD9_ZEoTt7B8atNHlTNOwZ-QiiuFl0J8jCtZhvKSoTrRl1r8JlE2bmuQlWBxDffahljWWtxUumj01Ol2RQQIMcYW1ofHHARK0vZ8oE0LZmLKvlRL1wjjFRYwpcPqMGxW3zTWXkAUtO7g1J5MuV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-depth/40 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-10 left-0 right-0 text-center">
+<a class="inline-block bg-white text-navy-depth px-8 py-3 rounded-full font-label-md shadow-lg hover:scale-105 transition-transform" href="https://maps.app.goo.gl/Zr4TSBqhCh2bMyKi7" target="_blank">View on Google Maps</a>
+</div>
+</div>
+</div>
+<!-- Inquiry Form (Right Column) -->
+<div class="lg:col-span-7" id="contact-form">
+<div class="bg-white rounded-[3.5rem] shadow-2xl border-4 border-secondary-container/10 p-10 md:p-14 h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-vibrant-green/5 rounded-full -mr-16 -mt-16"></div>
+<div class="mb-10 text-center md:text-left">
+<h2 class="font-headline-lg text-navy-depth mb-3">Start Planning</h2>
+<p class="font-body-md text-on-surface-variant">Tell us a bit about your upcoming event, and our team will get back to you with personalized solutions.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-sm text-on-surface mb-3 ml-4">Full Name</label>
+<input class="w-full bg-surface-container-low border-2 border-outline-variant/30 rounded-full px-6 py-4 font-body-md text-on-surface focus:outline-none focus:border-vibrant-red focus:ring-1 focus:ring-vibrant-red transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-3 ml-4">Email Address</label>
+<input class="w-full bg-surface-container-low border-2 border-outline-variant/30 rounded-full px-6 py-4 font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-sm text-on-surface mb-3 ml-4">Phone Number</label>
+<input class="w-full bg-surface-container-low border-2 border-outline-variant/30 rounded-full px-6 py-4 font-body-md text-on-surface focus:outline-none focus:border-vibrant-green focus:ring-1 focus:ring-vibrant-green transition-all" placeholder="+91" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-3 ml-4">Event Type</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low border-2 border-outline-variant/30 rounded-full px-6 py-4 font-body-md text-on-surface focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container transition-all appearance-none">
+<option>Wedding Event</option>
+<option>Corporate Event</option>
+<option>Sports Event</option>
+<option>Catering &amp; Hospitality</option>
+<option>Other</option>
+</select>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-4 ml-4">Estimated Guest Count</label>
+<div class="flex gap-4 flex-wrap">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="guests" type="radio"/>
+<div class="px-8 py-3 rounded-full border-2 border-outline-variant text-on-surface-variant font-label-md peer-checked:bg-vibrant-red peer-checked:border-vibrant-red peer-checked:text-white transition-all shadow-sm">Under 100</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="guests" type="radio"/>
+<div class="px-8 py-3 rounded-full border-2 border-outline-variant text-on-surface-variant font-label-md peer-checked:bg-vibrant-green peer-checked:border-vibrant-green peer-checked:text-white transition-all shadow-sm">100 - 500</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="guests" type="radio"/>
+<div class="px-8 py-3 rounded-full border-2 border-outline-variant text-on-surface-variant font-label-md peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-all shadow-sm">500+</div>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-on-surface mb-3 ml-4">Event Details &amp; Requirements</label>
+<textarea class="w-full bg-surface-container-low border-2 border-outline-variant/30 rounded-[2rem] px-8 py-6 font-body-md text-on-surface focus:outline-none focus:border-vibrant-orange focus:ring-1 focus:ring-vibrant-orange transition-all resize-none" placeholder="Tell us about your vision, preferred dates, and any specific services you need..." rows="5"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary via-vibrant-green to-secondary-container text-white rounded-full py-5 font-headline-md shadow-xl hover:shadow-primary/30 transition-all hover:scale-[1.03] active:scale-[0.98]" type="button">
+                        Send Inquiry
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap-md bg-navy-depth dark:bg-navy-depth border-t-8 border-secondary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-display-lg text-headline-lg text-secondary-container block mb-4">Prism Events</span>
+<p class="font-body-md text-surface-variant/80 mb-6 max-w-sm">Seamless Planning, Unforgettable Celebrations, Endless Memories.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-surface dark:text-surface-bright mb-4">Quick Links</h4>
+<a class="font-body-md text-surface-variant/80 hover:text-white hover:text-vibrant-red transition-colors" href="#">Portfolio</a>
+<a class="font-body-md text-surface-variant/80 hover:text-white hover:text-vibrant-green transition-colors" href="#">Services</a>
+<a class="font-body-md text-surface-variant/80 hover:text-white hover:text-primary transition-colors" href="#">Philosophy</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-surface dark:text-surface-bright mb-4">Support</h4>
+<a class="font-body-md text-surface-variant/80 hover:text-white transition-colors" href="#">Team</a>
+<a class="font-body-md text-secondary-container font-bold hover:text-vibrant-orange transition-colors" href="#">Contact Us</a>
+<a class="font-body-md text-surface-variant/80 hover:text-white transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-surface dark:text-surface-bright mb-4">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-surface-variant/80 hover:bg-vibrant-red hover:text-white transition-all" href="#"><span class="material-symbols-outlined">thumb_up</span></a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-surface-variant/80 hover:bg-vibrant-orange hover:text-white transition-all" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-12 pt-8 border-t border-white/10 text-center">
+<p class="font-body-md text-surface-variant/60">© 2026 Prism Events. Creating vibrant, unforgettable celebrations.</p>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('section > div, main > div, .grid > div').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
+<style>
+  .animate-fade-in { opacity: 1 !important; transform: translateY(0) !important; }
+</style>
+</body></html>

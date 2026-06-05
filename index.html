@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prism Events | Seamless Planning, Unforgettable Celebrations</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blob-shape {
+            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        }
+        .organic-curve {
+            border-radius: 63% 37% 54% 46% / 28% 72% 28% 72%;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#002B5B", /* Deep Blue from logo */
+                        "vibrant-red": "#E31E24", /* Red from logo */
+                        "vibrant-yellow": "#FFD200", /* Yellow from logo */
+                        "vibrant-green": "#009444", /* Green from logo */
+                        "vibrant-teal": "#00A99D", /* Teal/Cyan from logo */
+                        "secondary": "#FFD200",
+                        "surface-container": "#F4F7F5",
+                        "navy-depth": "#001B3E",
+                        "on-background": "#191c22",
+                        "background": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "2rem",
+                        "lg": "3rem",
+                        "xl": "4rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "1.5rem",
+                        "gutter": "2rem",
+                        "section-gap-md": "6rem",
+                        "container-max": "1280px",
+                        "section-gap-lg": "10rem",
+                        "margin-desktop": "4rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-vibrant-yellow selection:text-primary">
+<!-- Decorative Background Blobs -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute -top-24 -left-24 w-[40rem] h-[40rem] bg-vibrant-yellow/10 blur-[120px] rounded-full"></div>
+<div class="absolute top-1/2 -right-48 w-[50rem] h-[50rem] bg-vibrant-red/5 blur-[150px] rounded-full"></div>
+<div class="absolute bottom-0 left-1/4 w-[60rem] h-[60rem] bg-vibrant-green/5 blur-[180px] rounded-full"></div>
+</div>
+<!-- TopNavBar -->
+<header class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-5xl z-50 bg-white/80 backdrop-blur-2xl border border-white/40 rounded-full shadow-2xl shadow-primary/10">
+<div class="flex justify-between items-center h-16 px-6">
+<!-- Brand -->
+<div class="flex items-center gap-3">
+<img alt="Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsm2cDJbYWnFSsZSDC16uJ5HAtAJcd--uDukuI91X0VcaTwR2wr4Ab0aCLSmEBOgeChjGmjRmh3S2ETmHhsGAspywZpbZtzcubQdQdXs90R5ktGfb4fiMcFynC0uLLNR4SvK1xHFco3t43n4jRNGMwDLPlrCgbJxgUPBZnMNtkW6II-RpAVHnMUQ_nVjR0W9f5bLSPjGn-UcbeqILDh5R4jLptlL8JMleoFX8ywWG62CKG2QMHV2QM3e-oW"/>
+<span class="font-display-lg text-lg md:text-xl text-primary font-bold tracking-tight hidden sm:block">Prism Events</span>
+</div>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-primary font-bold px-4 py-2 rounded-full bg-vibrant-yellow/20" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-background/70 hover:text-vibrant-red transition-all px-4 py-2 rounded-full hover:bg-vibrant-red/5" href="#">Weddings</a>
+<a class="font-label-md text-label-md text-on-background/70 hover:text-vibrant-green transition-all px-4 py-2 rounded-full hover:bg-vibrant-green/5" href="#">Corporate</a>
+<a class="font-label-md text-label-md text-on-background/70 hover:text-primary transition-all px-4 py-2 rounded-full hover:bg-primary/5" href="about.html">About</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-2">
+<button class="bg-primary text-white px-6 py-2.5 rounded-full font-label-md text-label-md shadow-lg shadow-primary/25 hover:scale-105 active:scale-95 transition-all">
+                Book Now
+            </button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop mb-section-gap-md">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="text-left flex flex-col items-start gap-8 order-2 lg:order-1">
+<span class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-vibrant-yellow/10 border border-vibrant-yellow/30 text-primary font-bold text-sm tracking-wide">
+<span class="w-3 h-3 rounded-full bg-vibrant-red animate-ping"></span>
+                    Chennai's Premier Event Architects
+                </span>
+<h1 class="font-display-lg text-4xl md:text-6xl lg:text-7xl text-primary font-extrabold leading-[1.1] tracking-tight">
+                    Seamless Planning, <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-vibrant-red via-vibrant-yellow to-vibrant-green">Unforgettable</span> <br/>
+                    Celebrations
+                </h1>
+<p class="font-body-lg text-lg md:text-xl text-on-background/70 max-w-xl">
+                    Endless Memories. We offer end-to-end solutions for event planning, decor, catering, and photography. Tailored to your vision and budget.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-vibrant-red text-white px-10 py-5 rounded-full font-bold text-label-md shadow-xl shadow-vibrant-red/30 hover:-translate-y-1 transition-all">
+                        Start Your Celebration
+                    </button>
+<button class="bg-white text-primary border-2 border-primary/10 px-10 py-5 rounded-full font-bold text-label-md hover:bg-primary/5 transition-all">
+                        Explore Portfolio
+                    </button>
+</div>
+</div>
+<!-- Dynamic Curvy Hero Image -->
+<div class="relative order-1 lg:order-2">
+<div class="absolute -inset-4 bg-vibrant-yellow/20 organic-curve blur-3xl animate-pulse"></div>
+<div class="relative w-full aspect-square md:aspect-[4/5] overflow-hidden organic-curve shadow-2xl border-8 border-white">
+<img alt="Hero" class="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida/ADBb0ujcd95pNKXEjXOIZ3k0LlpUQvhvANGYbrzGu8yIHMb0gdmjQ9eeq8rOL6a2o7aU28HsUE8ljHyz84lLLA_MYM5uwLVZAJgejYiQ2lKsLVCgTy_Zzx7dSfNz9FwDRvmab2hr_oeV-5BbFmfw_EhcegWiyLxrPr6fIDr0lfrTc8SV4eIneejp2u_nNmsO-eNBNpdaQE4l0hy-RD-kPqxJcmvjdbTydQyB2RNDYR98MOPVNfW2sw7pCcC-DOwg"/>
+</div>
+<!-- Floating Badges -->
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-[2rem] shadow-xl border border-primary/5 hidden md:block animate-bounce">
+<span class="material-symbols-outlined text-vibrant-green text-4xl">verified_user</span>
+</div>
+</div>
+</div>
+</section>
+<!-- What We Do (Curvy Bento Grid) -->
+<section class="py-section-gap-md px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative overflow-visible">
+<div class="text-center mb-20 relative">
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-64 h-64 bg-vibrant-green/10 rounded-full blur-3xl"></div>
+<h2 class="font-display-lg text-3xl md:text-5xl text-primary mb-6 font-extrabold">Crafting Experiences <br class="md:hidden"/><span class="text-vibrant-green">Across Every Vertical</span></h2>
+<p class="font-body-md text-on-background/60 max-w-2xl mx-auto text-lg">From intimate weddings to massive corporate conferences, our specialized teams handle everything in-house with a splash of color.</p>
+</div>
+<div class="flex flex-col gap-12">
+<!-- Large Oval Wedding Card -->
+<div class="relative w-full h-[500px] md:h-[600px] rounded-[100px] md:rounded-[200px] overflow-hidden group shadow-2xl border-4 border-white">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=80" alt="A breathtaking outdoor wedding ceremony setup at sunset."/>
+<div class="absolute inset-0 z-20 flex flex-col justify-end items-center text-center p-12 pb-20">
+<div class="w-20 h-20 rounded-full bg-vibrant-red flex items-center justify-center text-white mb-6 shadow-lg shadow-vibrant-red/40">
+<span class="material-symbols-outlined text-4xl">favorite</span>
+</div>
+<h3 class="font-display-lg text-4xl text-white mb-4">Wedding Events</h3>
+<p class="font-body-lg text-white/80 max-w-xl">Budget-friendly packages ensuring a stress-free experience from decor to catering, tailored to your unique love story.</p>
+</div>
+</div>
+<!-- Two Overlapping Bubbles -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative aspect-square md:aspect-auto h-[450px] blob-shape overflow-hidden group shadow-xl bg-primary border-4 border-white">
+<div class="absolute inset-0 bg-vibrant-green/80 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:rotate-3" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80" alt="A modern corporate conference stage setup."/>
+<div class="absolute inset-0 z-20 p-12 flex flex-col justify-center items-center text-center bg-primary/40 group-hover:bg-vibrant-green/40 transition-colors">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-xl flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined text-3xl">business_center</span>
+</div>
+<h3 class="font-display-lg text-3xl text-white mb-3">Corporate Events</h3>
+<p class="font-body-md text-white/90">Conferences, launches, and AGM meetings executed with precision.</p>
+</div>
+</div>
+<div class="relative aspect-square md:aspect-auto h-[450px] rounded-[100px] overflow-hidden group shadow-xl bg-vibrant-yellow border-4 border-white">
+<div class="absolute inset-0 bg-vibrant-yellow/90 mix-blend-multiply z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uiLjs10lt2D2dPvSjRtNRHdk1IYsi24qiaM9qVcYMMDjHdhMdx1a9zRoa4u_zcKl0T__SIOAGqNut6WZNtnphCEwTGW9qRT_L9Pw-K4AOIJC_Q80ukqW9ZZ04Ld19c8wDbYt6VlwOI9hDyEDC73M4vNdM247a6NNC65oifQT2mVXPq5qFH3vNVaslmU8PXthC0GjPFG8K3eF8NunXFeHRJkkLx3jRw_L-pIc57o0zKMtKd7t73_fYNsiHNS"/>
+<div class="absolute inset-0 z-20 p-12 flex flex-col justify-center items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-vibrant-yellow mb-6">
+<span class="material-symbols-outlined text-3xl">sports_soccer</span>
+</div>
+<h3 class="font-display-lg text-3xl text-primary mb-3">Sports Events</h3>
+<p class="font-body-md text-primary/80">Expertly organized sports days and massive corporate competitions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Story (Philosophy - Circular Motif) -->
+<section class="py-section-gap-lg relative overflow-hidden bg-primary text-white">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-vibrant-yellow/10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<h2 class="font-display-lg text-4xl md:text-5xl font-extrabold leading-tight">Driven by Passion, <br/> <span class="text-vibrant-yellow">Inspired by Moments</span></h2>
+<p class="font-body-lg text-white/80 leading-relaxed text-xl">
+                        Our name, "Prism," reflects our philosophy—refracting every vision into a spectrum of vibrant, unforgettable experiences. We transform ordinary moments into brilliant celebrations.
+                    </p>
+<div class="p-8 bg-white/5 backdrop-blur-xl rounded-[3rem] border border-white/10 italic font-body-md text-white/70">
+                        Like light through a prism, we break down every event into its essential elements—color, energy, and brilliance—then reassemble them into something extraordinary.
+                    </div>
+</div>
+<div class="relative flex justify-center items-center">
+<!-- Overlapping Circles Interaction -->
+<div class="relative w-80 h-80 md:w-[450px] md:h-[450px]">
+<div class="absolute top-0 left-0 w-3/4 h-3/4 bg-vibrant-yellow rounded-full flex flex-col items-center justify-center p-10 text-primary shadow-2xl animate-pulse">
+<span class="material-symbols-outlined text-6xl mb-4">palette</span>
+<h4 class="font-display-lg text-2xl font-bold">Color &amp; Vision</h4>
+<p class="text-sm text-center mt-2 font-semibold">Vibrant themes and creative decor.</p>
+</div>
+<div class="absolute bottom-0 right-0 w-3/4 h-3/4 bg-vibrant-red rounded-full flex flex-col items-center justify-center p-10 text-white shadow-2xl -translate-x-8 -translate-y-8">
+<span class="material-symbols-outlined text-6xl mb-4">auto_awesome</span>
+<h4 class="font-display-lg text-2xl font-bold">Energy &amp; Spark</h4>
+<p class="text-sm text-center mt-2">Dynamic experiences that shine.</p>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-2xl border-4 border-primary">
+<img alt="Icon" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsm2cDJbYWnFSsZSDC16uJ5HAtAJcd--uDukuI91X0VcaTwR2wr4Ab0aCLSmEBOgeChjGmjRmh3S2ETmHhsGAspywZpbZtzcubQdQdXs90R5ktGfb4fiMcFynC0uLLNR4SvK1xHFco3t43n4jRNGMwDLPlrCgbJxgUPBZnMNtkW6II-RpAVHnMUQ_nVjR0W9f5bLSPjGn-UcbeqILDh5R4jLptlL8JMleoFX8ywWG62CKG2QMHV2QM3e-oW"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials (Pill Style) -->
+<section class="py-section-gap-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="flex items-center gap-2 text-vibrant-yellow mb-6">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h2 class="font-display-lg text-4xl md:text-5xl text-primary font-extrabold mb-4">Excellent Experiences</h2>
+<p class="font-body-md text-on-background/50 text-lg uppercase tracking-[0.2em] font-bold">Verified Trustindex Stories</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Review 1 -->
+<div class="bg-vibrant-yellow/10 p-10 rounded-[4rem] border-2 border-vibrant-yellow/20 flex flex-col h-full transform hover:rotate-2 transition-transform shadow-lg shadow-vibrant-yellow/5">
+<p class="font-body-lg text-primary italic flex-grow mb-8 text-lg">"We were truly blessed to have partnered with you, thrilled to have been part of the incredible success of the OSAC India AGM event! From meticulous planning to flawless execution, your dedication truly shone through."</p>
+<div class="flex items-center gap-5 border-t-2 border-vibrant-yellow/20 pt-8">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-vibrant-yellow font-bold text-xl border-4 border-white shadow-md">J</div>
+<div>
+<h4 class="font-display-lg text-lg text-primary font-bold">John Paul Manickam</h4>
+<span class="font-label-sm text-xs font-bold text-vibrant-red uppercase">Corporate Event</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-vibrant-red/5 p-10 rounded-[4rem] border-2 border-vibrant-red/10 flex flex-col h-full transform hover:-rotate-1 transition-transform shadow-lg shadow-vibrant-red/5">
+<p class="font-body-lg text-primary italic flex-grow mb-8 text-lg">"Their rates were surprisingly lower than other event planners, but they offered a comprehensive package with top-notch professionals... The food was heavenly! Even I, a non-mutton eater, was blown away."</p>
+<div class="flex items-center gap-5 border-t-2 border-vibrant-red/20 pt-8">
+<div class="w-16 h-16 rounded-full bg-vibrant-red flex items-center justify-center text-white font-bold text-xl border-4 border-white shadow-md">J</div>
+<div>
+<h4 class="font-display-lg text-lg text-primary font-bold">Jerry Jemson</h4>
+<span class="font-label-sm text-xs font-bold text-vibrant-green uppercase">Wedding Event</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-vibrant-green/5 p-10 rounded-[4rem] border-2 border-vibrant-green/10 flex flex-col h-full transform hover:rotate-3 transition-transform shadow-lg shadow-vibrant-green/5">
+<p class="font-body-lg text-primary italic flex-grow mb-8 text-lg">"The decorations were breathtaking – those stunning natural flowers added a touch of elegance to our special day. You're not just event planners – you're dream makers."</p>
+<div class="flex items-center gap-5 border-t-2 border-vibrant-green/20 pt-8">
+<div class="w-16 h-16 rounded-full bg-vibrant-green flex items-center justify-center text-white font-bold text-xl border-4 border-white shadow-md">R</div>
+<div>
+<h4 class="font-display-lg text-lg text-primary font-bold">Ruth Santineer</h4>
+<span class="font-label-sm text-xs font-bold text-primary uppercase">Wedding Event</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap-md bg-white border-t-[20px] border-vibrant-yellow relative overflow-hidden">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-24 bg-primary rounded-b-full"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<!-- Brand Column -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLsm2cDJbYWnFSsZSDC16uJ5HAtAJcd--uDukuI91X0VcaTwR2wr4Ab0aCLSmEBOgeChjGmjRmh3S2ETmHhsGAspywZpbZtzcubQdQdXs90R5ktGfb4fiMcFynC0uLLNR4SvK1xHFco3t43n4jRNGMwDLPlrCgbJxgUPBZnMNtkW6II-RpAVHnMUQ_nVjR0W9f5bLSPjGn-UcbeqILDh5R4jLptlL8JMleoFX8ywWG62CKG2QMHV2QM3e-oW"/>
+<span class="font-display-lg text-2xl text-primary font-extrabold">Prism Events</span>
+</div>
+<p class="font-body-md text-on-background/60">
+                © 2026 Prism Events. Creating vibrant, unforgettable celebrations.
+            </p>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-vibrant-red font-extrabold uppercase tracking-widest mb-2">Explore</h4>
+<a class="font-body-md text-primary hover:text-vibrant-green transition-colors font-semibold" href="#">Portfolio</a>
+<a class="font-body-md text-primary hover:text-vibrant-green transition-colors font-semibold" href="#">Services</a>
+<a class="font-body-md text-primary hover:text-vibrant-green transition-colors font-semibold" href="#">Philosophy</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-vibrant-green font-extrabold uppercase tracking-widest mb-2">Company</h4>
+<a class="font-body-md text-primary hover:text-vibrant-red transition-colors font-semibold" href="#">Team</a>
+<a class="font-body-md text-primary hover:text-vibrant-red transition-colors font-semibold" href="contact.html">Contact Us</a>
+<a class="font-body-md text-primary hover:text-vibrant-red transition-colors font-semibold" href="#">Privacy Policy</a>
+</div>
+<!-- Contact Column -->
+<div class="flex flex-col gap-6">
+<h4 class="font-label-sm text-primary font-extrabold uppercase tracking-widest mb-2">Connect</h4>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-primary hover:scale-105 transition-all flex items-center gap-3 bg-vibrant-yellow/10 p-3 rounded-full border border-vibrant-yellow/20" href="tel:9710351020">
+<span class="material-symbols-outlined text-vibrant-red">phone</span>
+<span class="font-bold">+91 9710351020</span>
+</a>
+<a class="font-body-md text-primary hover:scale-105 transition-all flex items-center gap-3 bg-primary/5 p-3 rounded-full border border-primary/10" href="mailto:hello@prismevents.com">
+<span class="material-symbols-outlined text-vibrant-green">mail</span>
+<span class="font-bold">Email Us</span>
+</a>
+</div>
+<p class="font-body-md text-on-background/50 text-sm mt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                Chennai, India
+            </p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-fade-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('section > div, section > h2, .grid > div').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
+<style>
+  .animate-fade-in { opacity: 1 !important; transform: translateY(0) !important; }
+</style>
+</body></html>
