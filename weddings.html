@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prism Events - Vibrant Wedding Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#6c5000",
+                      "on-secondary-fixed-variant": "#5b4300",
+                      "secondary": "#785900",
+                      "surface-container-highest": "#e0e2eb",
+                      "primary-fixed-dim": "#aac7ff",
+                      "vibrant-orange": "#F97316",
+                      "outline": "#727784",
+                      "on-primary-container": "#ebefff",
+                      "on-primary-fixed": "#001b3e",
+                      "navy-depth": "#000B33",
+                      "inverse-primary": "#aac7ff",
+                      "on-secondary-fixed": "#261a00",
+                      "error-container": "#ffdad6",
+                      "inverse-surface": "#2d3037",
+                      "on-primary-fixed-variant": "#00458d",
+                      "surface-container": "#ecedf7",
+                      "on-error-container": "#93000a",
+                      "vibrant-green": "#10B981",
+                      "on-tertiary-fixed": "#341100",
+                      "inverse-on-surface": "#eff0f9",
+                      "surface-dim": "#d8dae3",
+                      "primary": "#0053a6",
+                      "tertiary-fixed-dim": "#ffb692",
+                      "secondary-container": "#fdc003",
+                      "vibrant-red": "#E11D48",
+                      "vibrant-blue": "#0053a6",
+                      "vibrant-yellow": "#fdc003",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#ffece5",
+                      "surface": "#f9f9ff",
+                      "vibrant-teal": "#0D9488",
+                      "on-surface": "#191c22",
+                      "background": "#f9f9ff",
+                      "surface-variant": "#e0e2eb",
+                      "surface-tint": "#005db8",
+                      "on-tertiary-fixed-variant": "#793000",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "surface-container-high": "#e6e8f1",
+                      "outline-variant": "#c1c6d5",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#d6e3ff",
+                      "surface-container-low": "#f2f3fc",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#fabd00",
+                      "on-background": "#191c22",
+                      "on-surface-variant": "#414753",
+                      "tertiary-container": "#b64d03",
+                      "secondary-fixed": "#ffdf9e",
+                      "tertiary-fixed": "#ffdbcb",
+                      "tertiary": "#903b00",
+                      "primary-container": "#046bd2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "1.5rem",
+                      "xl": "2.5rem",
+                      "full": "9999px",
+                      "bubble": "4rem 8rem 4rem 8rem"
+              },
+              "spacing": {
+                      "margin-mobile": "1rem",
+                      "gutter": "1.5rem",
+                      "section-gap-md": "4rem",
+                      "container-max": "1280px",
+                      "section-gap-lg": "8rem",
+                      "margin-desktop": "2.5rem"
+              },
+              "fontFamily": {
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "display-lg-mobile": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "label-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Montserrat"],
+                      "headline-lg": ["Montserrat"]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        .bubble-shape { border-radius: 60% 40% 70% 30% / 40% 50% 60% 70%; }
+        .oval-shape { border-radius: 50%; }
+        .fluid-curve { border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%; }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-navy-depth/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-display-lg text-headline-md text-vibrant-blue tracking-tight">Prism Events</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md text-label-md" href="index.html">Home</a>
+<a class="text-vibrant-blue font-bold border-b-2 border-vibrant-blue pb-1 font-label-md text-label-md" href="weddings.html">Weddings</a>
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md text-label-md" href="corporate.html">Corporate</a>
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md text-label-md" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-vibrant-blue text-on-primary px-8 py-2 rounded-full font-label-md text-label-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                Book Now
+            </button>
+<button class="md:hidden text-vibrant-blue">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover object-center brightness-75 scale-105" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=80"/>
+<div class="absolute inset-0 bg-gradient-to-b from-vibrant-blue/30 via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="bg-white/10 backdrop-blur-xl p-12 md:p-20 fluid-curve inline-block border border-white/30 shadow-2xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 animate-fade-in-up">
+                    Unforgettable Weddings
+                </h1>
+<p class="font-body-lg text-body-lg text-white max-w-2xl mx-auto mb-10 opacity-90">
+                    At Prism Events, we craft unforgettable weddings tailored to your vision. From intimate ceremonies to grand celebrations.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-vibrant-red text-white px-10 py-4 rounded-full font-label-md text-label-md shadow-xl hover:bg-vibrant-red/90 hover:scale-110 transition-all duration-300">
+                        Explore Packages
+                    </button>
+<button class="bg-vibrant-yellow text-navy-depth px-10 py-4 rounded-full font-label-md text-label-md shadow-xl hover:bg-vibrant-yellow/90 hover:scale-110 transition-all duration-300">
+                        View Gallery
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Services Section -->
+<section class="py-section-gap-md lg:py-section-gap-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
+<div class="absolute -top-20 -left-20 w-80 h-80 bg-vibrant-red/10 oval-shape blur-3xl z-[-1]"></div>
+<div class="absolute bottom-20 -right-20 w-80 h-80 bg-vibrant-green/10 oval-shape blur-3xl z-[-1]"></div>
+<div class="text-center mb-20">
+<span class="text-vibrant-red font-label-sm text-label-sm uppercase tracking-widest mb-4 block">Our Expertise</span>
+<h2 class="font-headline-lg text-headline-lg text-navy-depth text-4xl md:text-5xl">Crafting Your Perfect Day</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-6">We handle every detail with expertise, ensuring a stress-free and flawlessly executed event.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<!-- Decor & Ambiance -->
+<div class="md:col-span-7 group relative bg-vibrant-blue rounded-[4rem] overflow-hidden shadow-2xl min-h-[450px] transition-all duration-500 hover:rounded-bubble">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110" src="https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1200&q=80" alt="An elegant wedding reception hall decorated with abundant white floral arrangements."/>
+<div class="absolute inset-0 bg-gradient-to-t from-vibrant-blue via-vibrant-blue/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12 w-full">
+<div class="bg-white/90 backdrop-blur-md w-16 h-16 oval-shape flex items-center justify-center mb-6 text-vibrant-blue shadow-lg">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+<h3 class="font-headline-md text-headline-lg text-white mb-4">Decor &amp; Ambiance</h3>
+<p class="font-body-md text-body-lg text-white/90 max-w-md">Beautiful, customized designs that bring your vision to life, setting the perfect ambiance for your event.</p>
+</div>
+</div>
+<!-- Catering & Photography -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="group relative bg-vibrant-yellow p-10 rounded-[3rem] hover:rounded-bubble transition-all duration-500 shadow-xl flex flex-col justify-center h-full">
+<div class="bg-white/30 w-14 h-14 oval-shape flex items-center justify-center mb-6 text-navy-depth">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-navy-depth mb-4">Catering &amp; Hospitality</h3>
+<p class="font-body-md text-body-md text-navy-depth/80">A wide range of delicious culinary options to delight your guests, tailored to suit your theme.</p>
+</div>
+<div class="group relative bg-vibrant-green p-10 rounded-[3rem] hover:rounded-bubble transition-all duration-500 shadow-xl flex flex-col justify-center h-full">
+<div class="bg-white/30 w-14 h-14 oval-shape flex items-center justify-center mb-6 text-white">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-4">Photography</h3>
+<p class="font-body-md text-body-md text-white/90">Capturing every special moment with professional services, ensuring memories that last a lifetime.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="bg-navy-depth py-section-gap-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-full bg-vibrant-blue/10 bubble-shape scale-150 -translate-y-1/2 translate-x-1/2"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="bg-white/5 p-12 fluid-curve backdrop-blur-sm border border-white/10">
+<h2 class="font-headline-lg text-white text-4xl mb-8">Seamless Planning, Endless Memories</h2>
+<p class="font-body-md text-body-lg text-white/70 mb-10">
+                        At Prism Events, we're passionate about crafting exceptional experiences. Our budget-friendly packages ensure a stress-free experience.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="bg-vibrant-red w-12 h-12 flex-shrink-0 oval-shape flex items-center justify-center shadow-lg shadow-vibrant-red/20">
+<span class="material-symbols-outlined text-white text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-headline-md text-white mb-2">Budget-friendly Packages</h4>
+<p class="font-body-sm text-body-md text-white/60">Tailored solutions that match your vision without compromise.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-vibrant-yellow w-12 h-12 flex-shrink-0 oval-shape flex items-center justify-center shadow-lg shadow-vibrant-yellow/20">
+<span class="material-symbols-outlined text-navy-depth text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label-md text-headline-md text-white mb-2">Seamless Event Planning</h4>
+<p class="font-body-sm text-body-md text-white/60">We handle every detail with expertise and care.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bubble-shape overflow-hidden shadow-2xl border-8 border-vibrant-blue/20">
+<img alt="" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-vibrant-red/90 backdrop-blur-xl p-10 oval-shape shadow-2xl w-48 h-48 flex flex-col items-center justify-center text-center">
+<div class="font-display-lg text-5xl text-white mb-1">100%</div>
+<div class="font-label-sm text-label-sm text-white/90 uppercase tracking-tighter leading-tight">Client Satisfaction</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Gallery -->
+<section class="py-section-gap-md lg:py-section-gap-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6 text-center md:text-left">
+<div>
+<span class="text-vibrant-green font-label-sm text-label-sm uppercase tracking-widest mb-4 block">Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg text-navy-depth text-4xl">Featured Weddings</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[4rem] aspect-[4/3] mb-6 shadow-xl transition-all duration-500 group-hover:rounded-bubble">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="A joyful wedding celebration."/>
+<div class="absolute inset-0 bg-vibrant-yellow/10 group-hover:bg-vibrant-yellow/30 transition-colors duration-300"></div>
+<div class="absolute top-8 right-8 bg-white px-6 py-2 rounded-full font-label-sm text-label-sm text-vibrant-yellow shadow-lg uppercase font-bold">Christian Wedding</div>
+</div>
+<div class="px-6">
+<h3 class="font-headline-md text-headline-lg text-navy-depth group-hover:text-vibrant-yellow transition-colors">Jerry &amp; Vimisha</h3>
+<p class="font-body-md text-body-lg text-on-surface-variant mt-2">New Life Celebrations Centre</p>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[4rem] aspect-[4/3] mb-6 shadow-xl transition-all duration-500 group-hover:rounded-bubble">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="A stunning outdoor wedding reception."/>
+<div class="absolute inset-0 bg-vibrant-red/10 group-hover:bg-vibrant-red/30 transition-colors duration-300"></div>
+<div class="absolute top-8 right-8 bg-white px-6 py-2 rounded-full font-label-sm text-label-sm text-vibrant-red shadow-lg uppercase font-bold">Resort Wedding</div>
+</div>
+<div class="px-6">
+<h3 class="font-headline-md text-headline-lg text-navy-depth group-hover:text-vibrant-red transition-colors">Richie &amp; Prathiksha</h3>
+<p class="font-body-md text-body-lg text-on-surface-variant mt-2">VGP Heritage Resort</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-navy-depth w-full py-section-gap-md border-t-[12px] border-vibrant-yellow rounded-t-[5rem]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-white">
+<div class="col-span-1 md:col-span-2">
+<div class="font-display-lg text-headline-lg text-vibrant-yellow mb-6">Prism Events</div>
+<p class="font-body-md text-body-lg text-white/70 max-w-md leading-relaxed">
+                Seamless Planning, Unforgettable Celebrations, Endless Memories. Creating vibrant, unforgettable celebrations.
+            </p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-vibrant-red mb-6 uppercase tracking-widest font-bold">Links</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-white/70 hover:text-vibrant-red transition-all" href="index.html">Home</a></li>
+<li><a class="text-white/70 hover:text-vibrant-red transition-all" href="weddings.html">Weddings</a></li>
+<li><a class="text-white/70 hover:text-vibrant-red transition-all" href="corporate.html">Corporate</a></li>
+<li><a class="text-white/70 hover:text-vibrant-red transition-all" href="about.html">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-vibrant-green mb-6 uppercase tracking-widest font-bold">Contact</h4>
+<ul class="space-y-4 font-body-md">
+<li><a class="text-white/70 hover:text-vibrant-green transition-all" href="contact.html">Contact Us</a></li>
+<li><a class="text-white/70 hover:text-vibrant-green transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5 text-center px-margin-mobile">
+<p class="font-label-sm text-label-sm text-white/40">© 2026 Prism Events. Creating vibrant, unforgettable celebrations.</p>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('section > div, section > h2, .grid > div').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
+</body></html>

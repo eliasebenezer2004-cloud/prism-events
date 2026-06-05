@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prism Events - Corporate & Sports Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0053a6",
+                        "secondary": "#785900",
+                        "vibrant-red": "#E11D48",
+                        "vibrant-orange": "#F97316",
+                        "vibrant-green": "#10B981",
+                        "vibrant-teal": "#0D9488",
+                        "navy-depth": "#000B33",
+                        "surface": "#f9f9ff",
+                        "background": "#f9f9ff",
+                        "on-background": "#191c22",
+                        "on-surface": "#191c22",
+                        "on-surface-variant": "#414753",
+                        "outline-variant": "#c1c6d5",
+                        "secondary-container": "#fdc003",
+                        "primary-container": "#046bd2",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "oval": "100px 100px 100px 100px / 50px 50px 50px 50px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "1rem",
+                        "gutter": "1.5rem",
+                        "section-gap-md": "4rem",
+                        "container-max": "1280px",
+                        "section-gap-lg": "8rem",
+                        "margin-desktop": "2.5rem"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .parabolic-divider {
+            clip-path: ellipse(80% 100% at 50% 100%);
+        }
+        .bubble-shape {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+        }
+        .oval-container {
+            border-radius: 160px;
+        }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-navy-depth/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-display-lg text-2xl md:text-headline-md text-vibrant-blue tracking-tight">Prism Events</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md" href="weddings.html">Weddings</a>
+<a class="text-vibrant-blue font-bold border-b-2 border-vibrant-blue pb-1 font-label-md" href="corporate.html">Corporate</a>
+<a class="text-on-surface-variant hover:text-vibrant-blue transition-colors font-label-md" href="about.html">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-vibrant-blue text-on-primary px-8 py-3 rounded-full font-label-md hover:bg-primary-container transition-all shadow-md">Book Now</button>
+<button class="md:hidden text-vibrant-blue p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-section-gap-md px-margin-mobile">
+<div class="max-w-container-max mx-auto flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2 space-y-8 z-10 animate-fade-in-up">
+<div class="inline-flex items-center gap-2 px-6 py-2 bg-vibrant-teal/10 rounded-full text-vibrant-teal font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">business_center</span>
+                        Corporate Excellence
+                    </div>
+<h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-primary leading-tight">
+                        Elevating <span class="text-vibrant-teal">Corporate</span> Experiences
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-xl">
+                        From high-stakes international conferences to engaging product launches, we design and execute seamless corporate events that reflect your brand's prestige.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-6 py-3 bg-primary/5 border border-primary/20 rounded-full text-primary font-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">check_circle</span> Venue Selection
+                        </span>
+<span class="px-6 py-3 bg-vibrant-teal/5 border border-vibrant-teal/20 rounded-full text-vibrant-teal font-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">check_circle</span> Stage Design
+                        </span>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="bubble-shape w-full aspect-square bg-primary/10 absolute -top-10 -left-10 animate-pulse"></div>
+<div class="relative z-10 oval-container overflow-hidden h-[500px] w-full shadow-2xl border-8 border-white">
+<img alt="Corporate Event" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-depth/80 to-transparent flex flex-col justify-end p-12">
+<p class="text-secondary-container font-label-sm uppercase tracking-widest mb-2">Featured Case Study</p>
+<h3 class="text-white text-3xl font-headline-lg">OSAC India AGM 2024</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="h-24 bg-white parabolic-divider"></div>
+<!-- Global Security Summit -->
+<section class="bg-vibrant-red/5 py-section-gap-md relative">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="flex flex-col md:flex-row gap-8 items-stretch">
+<div class="md:w-2/3 bg-white oval-container overflow-hidden shadow-xl relative group h-[400px]">
+<img alt="Global Security Summit" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80"/>
+<div class="absolute inset-0 bg-vibrant-red/20 backdrop-blur-[1px]"></div>
+<div class="absolute inset-0 p-12 flex flex-col justify-center max-w-lg">
+<h3 class="text-white text-4xl font-headline-lg mb-4 drop-shadow-lg">Global Security Summit</h3>
+<p class="text-white/90 text-lg leading-relaxed">Orchestrating logistics for 450+ industry leaders and international delegates with impeccable precision.</p>
+</div>
+</div>
+<div class="md:w-1/3 bg-secondary-container rounded-[100px] p-10 flex flex-col justify-center items-center text-center shadow-lg transform rotate-3">
+<div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-white">handshake</span>
+</div>
+<h4 class="text-white text-2xl font-headline-md mb-4">Partner Trust</h4>
+<p class="text-white/80 font-body-md">Official event partners with OSAC India, delivering unique experiences.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sports Section -->
+<section class="py-section-gap-lg relative overflow-hidden">
+<div class="bubble-shape w-96 h-96 bg-secondary-container/10 absolute -right-20 top-0"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="text-center mb-16 space-y-4">
+<div class="inline-flex items-center gap-2 px-6 py-2 bg-secondary-container/10 rounded-full text-secondary font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">sports_volleyball</span>
+                        Dynamic Energy
+                    </div>
+<h2 class="text-4xl md:text-5xl font-headline-lg text-navy-depth">Uniting Teams Through <span class="text-vibrant-orange">Sports</span></h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="oval-container overflow-hidden h-[500px] shadow-2xl border-8 border-secondary-container/20">
+<img alt="Sports Event" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-vibrant-orange rounded-full flex items-center justify-center text-white shadow-xl animate-bounce">
+<span class="material-symbols-outlined text-4xl">emoji_events</span>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-6">
+<div class="p-8 rounded-[50px] bg-white border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-vibrant-orange/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-vibrant-orange">map</span>
+</div>
+<div>
+<h4 class="text-xl font-headline-md mb-2">Venue Logistics</h4>
+<p class="text-on-surface-variant">Expert selection and preparation of sporting grounds to meet tournament standards.</p>
+</div>
+</div>
+<div class="p-8 rounded-[50px] bg-white border border-outline-variant/30 shadow-sm hover:shadow-md transition-all flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-vibrant-orange/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-vibrant-orange">group</span>
+</div>
+<div>
+<h4 class="text-xl font-headline-md mb-2">Team Management</h4>
+<p class="text-on-surface-variant">Seamless registration and on-ground coordination for all participating teams.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Capabilities -->
+<section class="max-w-container-max mx-auto px-margin-mobile pb-section-gap-lg">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-headline-lg text-navy-depth">Our Creative <span class="text-primary">Ecosystem</span></h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group p-8 rounded-[60px] bg-white border-2 border-primary/10 hover:border-primary transition-all text-center">
+<div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-primary">architecture</span>
+</div>
+<h3 class="text-xl font-headline-md mb-3">Fabrication</h3>
+<p class="text-on-surface-variant text-sm">Custom stage designs and branding structures built to perfection.</p>
+</div>
+<div class="group p-8 rounded-[60px] bg-white border-2 border-vibrant-red/10 hover:border-vibrant-red transition-all text-center">
+<div class="w-20 h-20 rounded-full bg-vibrant-red/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-vibrant-red">speaker</span>
+</div>
+<h3 class="text-xl font-headline-md mb-3">AV Solutions</h3>
+<p class="text-on-surface-variant text-sm">State-of-the-art audio and lighting to amplify your message.</p>
+</div>
+<div class="group p-8 rounded-[60px] bg-white border-2 border-secondary-container/10 hover:border-secondary-container transition-all text-center">
+<div class="w-20 h-20 rounded-full bg-secondary-container/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-secondary">restaurant_menu</span>
+</div>
+<h3 class="text-xl font-headline-md mb-3">Catering</h3>
+<p class="text-on-surface-variant text-sm">Premium culinary experiences tailored for VIP networking.</p>
+</div>
+<div class="group p-8 rounded-[60px] bg-white border-2 border-vibrant-green/10 hover:border-vibrant-green transition-all text-center">
+<div class="w-20 h-20 rounded-full bg-vibrant-green/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl text-vibrant-green">photo_camera</span>
+</div>
+<h3 class="text-xl font-headline-md mb-3">Media</h3>
+<p class="text-on-surface-variant text-sm">Professional coverage to document your corporate milestones.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap-md bg-navy-depth text-white relative">
+<div class="absolute top-0 left-0 w-full h-12 bg-white parabolic-divider transform rotate-180"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile grid grid-cols-1 md:grid-cols-4 gap-12 mt-12">
+<div class="col-span-1 md:col-span-2">
+<span class="font-display-lg text-3xl text-secondary-container mb-4 block">Prism Events</span>
+<p class="text-white/60 text-lg mb-8 max-w-sm">Refracting your vision into unforgettable celebrations.</p>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:text-navy-depth transition-all cursor-pointer">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-secondary-container hover:text-navy-depth transition-all cursor-pointer">
+<span class="material-symbols-outlined">mail</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-secondary-container font-label-md uppercase tracking-widest mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-white/60 hover:text-white transition-colors" href="index.html">Home</a></li>
+<li><a class="text-white/60 hover:text-white transition-colors" href="weddings.html">Weddings</a></li>
+<li><a class="text-white/60 hover:text-white transition-colors" href="corporate.html">Corporate</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-secondary-container font-label-md uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-white/60 hover:text-white transition-colors" href="about.html">About Us</a></li>
+<li><a class="text-white/60 hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+<li><a class="text-white/60 hover:text-white transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 text-center border-t border-white/10 pt-8">
+<p class="text-white/40 text-sm">© 2026 Prism Events. Creating vibrant, unforgettable celebrations.</p>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('section > div, section > h2, .grid > div').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
+</body></html>
